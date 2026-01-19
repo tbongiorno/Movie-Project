@@ -1,16 +1,18 @@
-# React + Vite
+# Movie Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I love watching movies, but I don’t have enough time to catch up with all the releases and find cheap tickets nearby. This project, also known as the “Movie Finder” (FIX LATER), will solve this problem by notifying users of important movie releases and of cheaper movie tickets at nearby movie theatres. I hope that by using this application, users will be able to spend more time at movie theatres watching movies with people they care about.
 
-Currently, two official plugins are available:
+## Project Objectives
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Develop a running program that
+   - Finds popular recent releases
+   - Uses an Online map to find nearby movie thaters showing said release
+   - Notifies user of said release and where they can go to see it
+2. Advnace my skillset using tools and frameworks I am familiar with
+   - React/Javascript
+   - SQL Database Management
+   - API ata Gathering
+3. Utilize tools and frameeworks I am unfamiliar with to widen my skillset
+   - Advanced React Navigation
+   - Mapping Tools
+   - HTTP Requests
