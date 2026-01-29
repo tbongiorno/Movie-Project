@@ -1,33 +1,55 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Form from './form'
+
+const formList = [
+  {
+    "key": 1,
+    "title": "Login Here!",
+    "question1": "Enter Username",
+    "question2": "Enter Password",
+  },
+  {
+    "key": 2,
+    "title": "Sign Up Here!",
+    "question1": "Enter Username",
+    "question2": "Enter Password",
+  },
+  {
+    "key": 3,
+    "title": "Movie Searcher!",
+    "question1": "Enter Movie Title",
+    "question2": "",
+  },
+  {
+    "key": 4,
+    "title": "Location Searcher!",
+    "question1": "Enter Location",
+    "question2": "",
+  },
+
+]
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const form = (
+    <div>
+      {formList.map((form) => (
+        <Form
+          title={form.title}
+          q1={form.question1}
+          q2={form.question2}
+        />
+      ))}
+    </div>
+    
+  )
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Hello</h1>
+        { form }
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     
     </>
   )
 }
